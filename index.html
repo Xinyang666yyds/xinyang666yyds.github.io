@@ -1,0 +1,312 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" />
+    <title>The Main Unit Games(MUG) web</title>
+<link rel="icon" type="image/x-icon" href="logo.png"/>
+</head>
+<body style="background-color: black" scroll="auto">
+<div>
+<img src="logo2.png" width="50" height="40" style="margin-top: -5px;margin-left: 5px">
+
+<div style="margin-top: -20px;margin-left: 60px">
+
+    <a href="ab.html" style="color:beige;text-decoration: underline;text-decoration-color: black;margin-left: 30px">加入我们</a>
+    <a href="404.html" style="color:beige;text-decoration: underline;text-decoration-color: black;margin-left: 30px">仓库</a>
+    <a href="404.html" style="color:beige;text-decoration: underline;text-decoration-color: black;margin-left: 30px">捐赠</a>
+    <a href="404.html" style="color:beige;text-decoration: underline;text-decoration-color: black;margin-left: 30px">感谢信</a>
+    <a href="404.html" style="color:beige;text-decoration-color: black;margin-left: 30px">编程交流群</a>
+    <a href="about.html" style="color:beige;text-decoration-color: black;margin-left: 30px">用户黑名单公布</a>
+    <input type="text" name="" placeholder="search for member & user" style="margin-left: 390px;height: 40px;width: 200px">
+    <a href="#"></a>
+    <a href="#"><button style="margin-left: -30px;width: 60px;height: 40px;background-color: pink">%</button></a>
+</div>
+</div>
+<hr color="white" size="0.5">
+
+<div style="background: green">
+    <canvas id="myCanvas" style="width: 1300px"></canvas>
+    <script>
+        const width = document.getElementById("myCanvas").width = screen.availWidth;
+        const height = document.getElementById("myCanvas").height = screen.availHeight;
+        const ctx = document.getElementById("myCanvas").getContext("2d");
+        const arr = Array(Math.ceil(width / 10)).fill(0);
+        const str = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789&*^%$#@".split("");
+
+        function rain() {
+            ctx.fillStyle = "rgba(0,0,0,0.05)";
+            ctx.fillRect(0, 0, width, height);
+            ctx.fillStyle = "brown";
+            arr.forEach(function (value, index) {
+                ctx.fillText(str[Math.floor(Math.random() * str.length)], index * 10, value + 10);
+                arr[index] = value >= height || value > 8888 * Math.random() ? 0 : value + 10;
+            });
+        }
+
+        setInterval(rain, 30);
+    </script>
+<h1 style="color: aliceblue;margin-top: -500px;margin-left: 40px">我们期待更多热爱游戏开发的成员</h1>
+    <h2 style="color: aliceblue;text-decoration: underline;text-decoration-color: blue;margin-left: 40px">让我们一起创造奇迹</h2>
+    <a href="jieshao.html" style="margin-left: 40px"><button style="border-color: blue;border-radius: revert;background-color: #0000;height: 50px"><h3 style="color: springgreen;margin-top: 5px">点我了解更多<---</h3></button></a>
+</div>
+<div>
+    <div style="background-color: white;margin-top: 330px;backdrop-filter: blur(14px) saturate(150%);margin-left: -10px;width: 1300px;height: 400px">
+    <img src="web.png" alt="实拍" width="340" height="192" style="margin-left: 250px">
+    <div  style="margin-top: -160px;margin-left: 600px">
+    <h1>多分支开发</h1>
+    <h1>每位成员都有价值</h1>
+    </div>
+    <img src="py.png" alt="实拍" width="340" height="192" style="margin-left: 600px">
+    <div style="margin-left: 250px;margin-top: -160px">
+        <h1>我们各有所好</h1>
+        <h1>都投其所好</h1>
+    </div>
+    </div>
+
+
+    </div>
+<div>
+    <hr class="line">
+<style>
+    .line{
+        margin-top: 100px;
+        width: 800px;
+    }
+</style>
+<div style="margin-top: -20px;margin-left: 300px">
+<h5 style="color: red">2023.6</h5>
+<h5 style="color: red;margin-top: -40px;margin-left: 150px">2023.8</h5>
+<h5 style="color: red;margin-top: -40px;margin-left: 300px">2023.11</h5>
+<h5 style="color: red;margin-top: -40px;margin-left: 450px">2023.12</h5>
+</div>
+    <div style="margin-top: -52px;margin-left: 300px">
+        <input type="button" onclick="alert('MUG建立')" class="bt1" style="width: 10px;height: 10px;border-radius: 50%;border: none"></input>
+        <input type="button" onclick="alert('MUG在这个时候遇到一些问题,转移')" class="bt2" style="width: 10px;height: 10px;border-radius: 50%;border: none"></input>
+        <input type="button" onclick="alert('MUG第一版协议制定')" class="bt3" style="width: 10px;height: 10px;border-radius: 50%;border: none"></input>
+        <input type="button" onclick="alert('MUG第一年圆满总结')" class="bt4" style="width: 10px;height: 10px;border-radius: 50%;border: none"></input>
+        <style>
+            .bt1{
+                background-color: red;
+            }
+            .bt2{
+                margin-left: 140px;
+                background-color: red;
+            }
+            .bt3{
+                margin-left: 130px;
+                background-color: red;
+            }
+            .bt4{
+                margin-left: 130px;
+                background-color: red;
+            }
+        </style>
+
+    </div>
+</div>
+<div style="margin-left: 1000px">
+    <h3 style="color: red">当前时间是：</h3>
+<h5 id="datetime" style="color: red;margin-top: -40px;margin-left: 100px">
+    <script>
+        function getD1(){
+            var date=new Date();
+            var d1=date.toLocaleDateString();
+            document.getElementById("datetime").innerHTML =d1
+
+        }
+        setInterval("getD1();",1000)
+    </script>
+</h5>
+</div>
+<div style="background-color: white;width: 1300px;height: 40px;margin-top: auto;margin-left: -10px">
+    <h1 style="margin-left: 200px;color: green">不要emo了,emo只是小孩子会干的，来和我们一起创造！</h1>
+
+</div>
+</div>
+<hr size="0.5" style="margin-left: -10px;width: 1400px;margin-top: 40px">
+<div>
+<h1 style="color: red">公告:Retrograde ai正在开发中,希望有经验的人士可以提供宝贵意见</h1>
+
+    <h3 style="color: red">成员及团队优秀作品（已经通过解密协议）展示</h3>
+    <h5 style="color: red">1.本站主题曲1</h5>
+    <audio controls>
+        <source src="ftxd.wav" type="audio/wav">
+    </audio>
+    <h5 style="color: red">2.本站主题曲2</h5>
+    <audio controls>
+        <source src="gho.mp3" type="audio/mp3">
+    </audio>
+    <h5 style="color: red;margin-top: 250px">tip:更多作品可以通过联系我们上传</h5>
+    <div style="width: 200px;height: 200px;margin-top: -700px;margin-left: 700px">
+        <div id="frame">
+            <div class="heart left"></div>
+            <div class="heart right"></div>
+            <div class="heart bottom"></div>
+            <style>
+                #frame{
+
+
+                    position: relative;
+                    width: 400px;
+                    height: 300px;
+                    margin: 250px auto;
+                }
+                .left,.right{
+
+
+                    top: 0;
+                    width: 200px;
+                    height: 200px;
+                    border-radius: 50%;
+                }
+                .left{
+
+
+                    left: 35px;
+
+                }
+                .right{
+
+
+                    right: 35px;
+                    z-index: -1;
+                }
+                .bottom{
+
+
+                    bottom: 36px;
+                    left: 100px;
+                    width: 200px;
+                    height: 200px;
+                    transform: rotate(45deg);
+                    z-index: -1;
+
+                }
+                .heart{
+
+
+                    position: absolute;
+                    box-shadow:0 0 40px #d5093c;
+                    animation: beat .8s ease infinite normal;
+                    background: linear-gradient(-90deg, #F50A45 0%, #d5093c 40%);
+                }
+                @keyframes beat {
+
+
+                    0%{
+
+
+                        transform: scale(1) rotate(225deg);
+                        box-shadow:0 0 40px #d5093c;
+                    }
+                    50%{
+
+
+                        transform: scale(1.1) rotate(225deg);
+                        box-shadow: 0 0 70px #d5093c;
+                    }
+                    100%{
+
+
+                        transform: scale(1) rotate(225deg);
+                        box-shadow: 0 0 40px #d5093c;;
+                    }
+                }
+            </style>
+        </div>
+    </div>
+    <div style="margin-left: 600px">
+    <h1 style="color: white">一点一滴</h1>
+    <h1 style="color: white;margin-left: 40px;margin-top: -20px">汇聚成流</h1>
+    </div>
+    <div style="margin-top: -60px;margin-left: 600px">
+        <h1 style="color: #ff1a27">川</h1>
+        <h1 style="color: #ff1a27;margin-top: -20px">流</h1>
+        <div style="margin-top: -60px;margin-left: 40px">
+        <h1 style="color: #ff1a27;margin-top: -20px">不</h1>
+        <h1 style="color: #ff1a27;margin-top: -20px">息</h1>
+        </div>
+    </div>
+    <div style="margin-top: -108px;margin-left: 673px">
+        <h1 style="color: green">加努</h1>
+        <h1 style="color: green;margin-top: -20px">油力</h1>
+    </div>
+    <div style="margin-top: -107px;margin-left: 740px">
+        <h1 style="color: aqua">顶</h1>
+        <h1 style="color: aqua;margin-top: -20px">峰</h1>
+    </div>
+    <h1 style="color: deeppink;margin-left: 735px;margin-top: -199px">福</h1>
+    <h1 style="color: lightcoral;margin-left: 600px;margin-top: 95px">喜</h1>
+</div>
+<hr size="0.5" style="margin-top: 80px">
+<div style="background-color: white;width: 800px;height: 200px;margin: auto;margin-top: -60px">
+<h1 style="color: aqua;margin: auto">群api已经与24-2-29（utc+8）正式开放</h1>
+    <h1 style="color: aqua;margin: auto">感谢每一次访问</h1>
+    <h4 style="color: #ff1a27;margin-left: 700px;margin-top: 90px">新闻&公告栏</h4>
+</div>
+<hr size="0.5">
+<div>
+    <div style="margin-left: 100px">
+    <h5 style="color: white">历史成员</h5>
+    <h5 style="color: white">FYS</h5>
+    <h5 style="color: white;margin-top: -20px">ZZQ</h5>
+    <h5 style="color: white;margin-top: -20px">WSD</h5>
+    <h5 style="color: white;margin-top: -20px">unknown001</h5>
+    <h5 style="color: white;margin-top: -20px">unknown002</h5>
+    <h5 style="color: white;margin-top: -20px">unknown003</h5>
+    <h5 style="color: white;margin-top: -20px">unknown004</h5>
+    </div>
+    <div style="margin-top: -195px;margin-left: 250px">
+        <h5 style="color: white">history user</h5>
+        <h5 style="color: white">FYS</h5>
+        <h5 style="color: white;margin-top: -20px">ZZQ</h5>
+        <h5 style="color: white;margin-top: -20px">WSD</h5>
+        <h5 style="color: white;margin-top: -20px">unknown001</h5>
+        <h5 style="color: white;margin-top: -20px">unknown002</h5>
+        <h5 style="color: white;margin-top: -20px">unknown003</h5>
+        <h5 style="color: white;margin-top: -20px">unknown004</h5>
+    </div>
+    <div style="margin-top: -195px;margin-left: 400px">
+        <h5 style="color: white">역사 사용자</h5>
+        <h5 style="color: white">FYS</h5>
+        <h5 style="color: white;margin-top: -20px">ZZQ</h5>
+        <h5 style="color: white;margin-top: -20px">WSD</h5>
+        <h5 style="color: white;margin-top: -20px">알 수 없음001</h5>
+        <h5 style="color: white;margin-top: -20px">알 수 없음002</h5>
+        <h5 style="color: white;margin-top: -20px">알 수 없음003</h5>
+        <h5 style="color: white;margin-top: -20px">알 수 없음004</h5>
+    </div>
+    <div style="margin-top: -195px;margin-left: 600px">
+        <h5 style="color: white">Utilisateurs historiques</h5>
+        <h5 style="color: white">FYS</h5>
+        <h5 style="color: white;margin-top: -20px">ZZQ</h5>
+        <h5 style="color: white;margin-top: -20px">WSD</h5>
+        <h5 style="color: white;margin-top: -20px">Inconnu001</h5>
+        <h5 style="color: white;margin-top: -20px">Inconnu002</h5>
+        <h5 style="color: white;margin-top: -20px">Inconnu003</h5>
+        <h5 style="color: white;margin-top: -20px">Inconnu004</h5>
+    </div>
+    <div style="margin-top: -195px;margin-left: 800px">
+        <h5 style="color: white">Utilisateurs historiques</h5>
+        <h5 style="color: white">FYS</h5>
+        <h5 style="color: white;margin-top: -20px">ZZQ</h5>
+        <h5 style="color: white;margin-top: -20px">WSD</h5>
+        <h5 style="color: white;margin-top: -20px">Inconnu001</h5>
+        <h5 style="color: white;margin-top: -20px">Inconnu002</h5>
+        <h5 style="color: white;margin-top: -20px">Inconnu003</h5>
+        <h5 style="color: white;margin-top: -20px">Inconnu004</h5>
+    </div>
+   <div style="margin-top: -200px;margin-left: 1100px">
+       <a href="index.html"><button style="width: 100px;height: 30px;background-color: aqua;border-color: #ff1a27;text-decoration-color: lightcoral">返回顶部</button></a>
+   </div>
+
+</div>
+<hr size="0.7" style="margin-top: 200px">
+<div>
+<p style="color: red">©2023 MUG-leader & MUG all users,All rights reserved</p>
+</div>
+</body>
+</html>
+
+
